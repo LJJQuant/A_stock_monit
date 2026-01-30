@@ -208,7 +208,7 @@ def generate_cm_result(kdata: List[List], index: int, accuracy_factor: int = 150
 
 
 def get_data():
-    code = '605069'  # 股票代码
+    code = '605058'  # 股票代码
     secid = gen_eastmoney_code(code)
     ut = 'fa5fd1943c7b386f172d6893dbfba10b'  # 不用管
     klt = '5'        # 日k='101',周k='102'，月k='103'，5分钟='5'，15分钟='15'，30分钟='30'，60分钟='60'
