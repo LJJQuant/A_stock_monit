@@ -1,0 +1,26 @@
+# A股量化预警系统依赖
+# Python 3.11+
+
+# 数据处理
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 数据库
+duckdb>=0.9.0
+
+# 掘金量化SDK（需本地安装掘金终端）
+# gm 通过掘金终端自带，无需pip安装
+
+# HTTP客户端（爬虫）
+httpx>=0.24.0
+
+# 配置管理
+pyyaml>=6.0
+ruamel.yaml>=0.17.0
+
+# 日志
+loguru>=0.7.0
+
+# Web框架
+fastapi>=0.100.0
+uvicorn>=0.23.0

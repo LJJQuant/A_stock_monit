@@ -208,12 +208,12 @@ def generate_cm_result(kdata: List[List], index: int, accuracy_factor: int = 150
 
 
 def get_data():
-    code = '300058'  # 股票代码
+    code = '605058'  # 股票代码
     secid = gen_eastmoney_code(code)
     ut = 'fa5fd1943c7b386f172d6893dbfba10b'  # 不用管
     klt = '101'        # 日k='101',周k='102'，月k='103'，5分钟='5'，15分钟='15'，30分钟='30'，60分钟='60'
     fqt = '1'
-    end = '20260129'    # 数据结束日期
+    end = '20260130'    # 数据结束日期
     lmt = '210'         # 获取数据的条数
     url = f'https://push2his.eastmoney.com/api/qt/stock/kline/get?secid={secid}&ut={ut}&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt={klt}&fqt={fqt}&end={end}&lmt={lmt}'
     res = requests.get(url,headers=headers).json()

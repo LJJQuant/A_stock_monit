@@ -1,0 +1,13 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 数据库文件
+data/duckdb/*.duckdb
+data/duckdb/*.duckdb.wal
+文档/掘金SDK文档
+
+# 配置
+config
+
+logs
